@@ -14,7 +14,7 @@ Tecnologias
 
 Links Importantes  
 - [Documentação no Google Drive](https://docs.google.com/document/d/1qfVvh0RTGFYgaV2e6s6SmhDBZz5oyZyAKm7IGAJzICc/edit?usp=sharing)  
-- [Projeto no GitHub](LINK_DO_REPO_AQUI)  
+- [Projeto no GitHub](https://github.com/Millasanches55/ProjetoPoo.git)
 
 Status  
 Projeto em fase inicial. A estrutura e funcionalidades serão adicionadas ao longo do desenvolvimento.
