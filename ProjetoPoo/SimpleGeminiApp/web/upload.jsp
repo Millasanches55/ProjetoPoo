@@ -13,5 +13,9 @@
     </head>
     <body>
         <h2>Enviar PDF para Extração de Texto</h2>
+        <form action="UploadServlet" method="post" enctype="multipart/form-data">
+          <input type="file" name="arquivo" accept=".pdf" required />
+        <button type="submit">Enviar</button>
+        </form>
     </body>
 </html>
