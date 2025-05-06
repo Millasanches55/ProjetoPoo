@@ -36,7 +36,8 @@ public class ResumoService {
     content.add("parts", partsArray);
     contents.add(content);
     requestBody.add("contents", contents);
-    }
+    
+    try 
 
     }
     
