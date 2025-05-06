@@ -37,7 +37,10 @@ public class ResumoService {
     contents.add(content);
     requestBody.add("contents", contents);
     
-    try 
+    try (OutputStream os = conn.getOutputStream()) {
+        byte[] input = requestBody.toString().getBytes(StandardCharsets.UTF_8);
+        os.write(input, 0, input.length);
+    }
 
     }
     
