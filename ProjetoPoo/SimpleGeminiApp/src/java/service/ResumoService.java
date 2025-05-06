@@ -43,6 +43,7 @@ public class ResumoService {
     }
     try (BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
         JsonObject responseJson = JsonParser.parseReader(br).getAsJsonObject();
+         return responseJson
 
     }
     
