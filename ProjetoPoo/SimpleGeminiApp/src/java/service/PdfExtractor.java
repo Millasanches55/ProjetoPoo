@@ -14,5 +14,8 @@ import org.apache.pdfbox.text.PDFTextStripper;
  * @author Fatec
  */
 public class PdfExtractor {
-    
+     public static String extrairTexto(File pdfFile) throws IOException {
+         
+         
+     }
 }
