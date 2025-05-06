@@ -52,5 +52,5 @@ public class ResumoService {
                  .get("text").getAsString();
                  
                 
-
+    }
    
