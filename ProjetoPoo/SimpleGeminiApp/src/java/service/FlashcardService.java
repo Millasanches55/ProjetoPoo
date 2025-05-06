@@ -36,3 +36,7 @@ public class FlashcardService {
     conn.setRequestMethod("POST");
 conn.setRequestProperty("Content-Type", "application/json");
 conn.setDoOutput(true);
+
+try (OutputStream os = conn.getOutputStream()) {
+            os.write(jsonInput.getBytes());
+        }
