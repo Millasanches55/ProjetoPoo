@@ -22,5 +22,15 @@ public class FlashcardService {
     
     
     public static String gerarFlashcards(String texto) throws IOException {
-    
+    String prompt = "Gere flashcards de estudo (pergunta e resposta) a partir do seguinte conteúdo:\n" + texto;
+    String jsonInput = """
+        {
+            "contents": [{
+                "parts": [{
+                    "text": "%s"
+                }]
+            }]
+        }
+        """.formatted(prompt);
+
 
