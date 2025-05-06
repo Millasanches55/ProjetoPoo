@@ -16,5 +16,15 @@ import java.nio.charset.StandardCharsets;
  * @author Fatec
  */
 public class ResumoService {
+    private static final String API_KEY = "AIzaSyA-xNbUAj18cLFGuowbMvPpAy88IXeE_os";
+    
+    public static String gerarResumo(String textoOriginal) throws IOException {
+        
+    
+        
+        
+    }
+
+    }
     
 }
