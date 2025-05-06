@@ -16,7 +16,7 @@ import java.nio.charset.StandardCharsets;
  * @author Fatec
  */
 public class ResumoService {
-    
+    /*APIKEY*/
     
     public static String gerarResumo(String textoOriginal) throws IOException {
         String prompt = "Resuma o seguinte conteúdo de forma clara e objetiva:\n\n" + textoOriginal;
