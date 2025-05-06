@@ -50,8 +50,7 @@ public class ResumoService {
                  .getAsJsonArray("parts")
                  .get(0).getAsJsonObject()
                  .get("text").getAsString();
-                 
-                
+                             
     }
     }
 }
