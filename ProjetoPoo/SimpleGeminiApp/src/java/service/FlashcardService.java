@@ -33,5 +33,5 @@ public class FlashcardService {
         }
         """.formatted(prompt);
     HttpURLConnection conn = (HttpURLConnection) new URL(API_URL).openConnection();
-
-
+    conn.setRequestMethod("POST");
+conn.setRequestProperty("Content-Type", "application/json");
