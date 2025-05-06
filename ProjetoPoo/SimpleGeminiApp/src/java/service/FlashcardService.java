@@ -35,3 +35,4 @@ public class FlashcardService {
     HttpURLConnection conn = (HttpURLConnection) new URL(API_URL).openConnection();
     conn.setRequestMethod("POST");
 conn.setRequestProperty("Content-Type", "application/json");
+conn.setDoOutput(true);
