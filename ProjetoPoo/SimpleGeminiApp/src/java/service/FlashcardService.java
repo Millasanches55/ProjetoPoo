@@ -45,7 +45,19 @@ try (OutputStream os = conn.getOutputStream()) {
 
 try (BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()))){
     JsonObject respostaJson = JsonParser.parseReader(br).getAsJsonObject();
-            
+            JsonArray candidates = respostaJson.getAsJsonArray("candidates");
+            if (candidates != null && candidates.size() > 0) {
+                return candidates.get(0).getAsJsonObject()
+                        .getAsJsonObject("content")
+                        .getAsJsonArray("parts")
+                        .get(0).getAsJsonObject()
+                        .get("text").getAsString();
+            } else {
+                return "Nenhum flashcard gerado.";
+            }
+        }
+    }
+}
     
     
 }
