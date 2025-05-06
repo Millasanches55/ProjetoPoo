@@ -46,6 +46,10 @@ public class ResumoService {
          return responseJson
                 .getAsJsonArray("candidates")
                 .get(0).getAsJsonObject()
+                .getAsJsonObject("content")
+                 .getAsJsonArray("parts")
+                 
+                
 
     }
     
