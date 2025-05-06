@@ -43,4 +43,8 @@ try (OutputStream os = conn.getOutputStream()) {
 
 
 
-try
+try (BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()))){
+    
+    
+    
+}
