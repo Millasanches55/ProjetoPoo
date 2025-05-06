@@ -2,9 +2,11 @@ Descrição:
 A plataforma web Java EE, impulsionada pela IA do Google Gemini, oferece aos estudantes ferramentas de extração de texto de PDFs, geração de resumos e flashcards automáticos, respostas inteligentes a perguntas e correção automatizada de redações com sugestões personalizadas.
 
 Estrutura do Repositório  
-- `src/` → Código-fonte do projeto  
-- `README.md` → Documentação inicial  
-- `.gitignore` → Arquivos que não devem ser versionados  
+/src              → Código-fonte principal (Servlets, JSPs, Serviços)
+/web              → Arquivos JSP (páginas da aplicação)
+/lib              → Bibliotecas externas (como PDFBox)
+/README.md        → Esta documentação
+/.gitignore       → Arquivos ignorados pelo Git
 
 Tecnologias  
 - Java EE (Servlets, JSP)
