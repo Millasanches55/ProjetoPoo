@@ -14,7 +14,7 @@ import java.nio.charset.StandardCharsets;
 
 
 public class CorrecaoServlet extends HttpServlet {
-    private static final String API_KEY = "AIzaSyA-xNbUAj18cLFGuowbMvPpAy88IXeE_os"; 
+    /*APIKEY*/ 
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
