@@ -17,7 +17,7 @@ import java.net.URL;
 
 
 public class FlashcardService {
-    private static final String API_KEY = "AIzaSyA-xNbUAj18cLFGuowbMvPpAy88IXeE_os";
+    /*APIKEY*/
     private static final String API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + API_KEY;
     
     
