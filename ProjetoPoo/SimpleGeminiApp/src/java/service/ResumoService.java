@@ -25,6 +25,8 @@ public class ResumoService {
     conn.setDoOutput(true);
     conn.setRequestMethod("POST");
     conn.setRequestProperty("Content-Type", "application/json");
+    
+    JsonObject requestBody = new JsonObject();
         
         
     }
