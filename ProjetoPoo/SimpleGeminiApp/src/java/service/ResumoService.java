@@ -49,9 +49,8 @@ public class ResumoService {
                 .getAsJsonObject("content")
                  .getAsJsonArray("parts")
                  .get(0).getAsJsonObject()
+                 .get("text").getAsString();
                  
                 
 
-    }
-    
-}
+   
