@@ -32,5 +32,6 @@ public class FlashcardService {
             }]
         }
         """.formatted(prompt);
+    HttpURLConnection conn = (HttpURLConnection) new URL(API_URL).openConnection();
 
 
