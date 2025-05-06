@@ -19,9 +19,9 @@ public class ResumoService {
     /*APIKEY*/
     
     public static String gerarResumo(String textoOriginal) throws IOException {
-        String prompt = "Resuma o seguinte conteúdo de forma clara e objetiva:\n\n" + textoOriginal;
-        URL url = new URL("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + API_KEY);
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+    String prompt = "Resuma o seguinte conteúdo de forma clara e objetiva:\n\n" + textoOriginal;
+    URL url = new URL("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + API_KEY);
+    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
     conn.setDoOutput(true);
     conn.setRequestMethod("POST");
     conn.setRequestProperty("Content-Type", "application/json");
