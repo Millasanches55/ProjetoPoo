@@ -44,7 +44,8 @@ try (OutputStream os = conn.getOutputStream()) {
 
 
 try (BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()))){
-    
+    JsonObject respostaJson = JsonParser.parseReader(br).getAsJsonObject();
+            
     
     
 }
