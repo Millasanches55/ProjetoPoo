@@ -32,6 +32,10 @@ public class ResumoService {
     part.addProperty("text", prompt);
     JsonObject content = new JsonObject();
     JsonArray partsArray = new JsonArray();
+    partsArray.add(part);
+    content.add("parts", partsArray);
+    contents.add(content);
+    requestBody.add("contents", contents);
     }
 
     }
