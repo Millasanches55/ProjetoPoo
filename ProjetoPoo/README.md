@@ -1,5 +1,5 @@
 Descrição:
-Aplicação que utiliza Inteligência Artificial para auxiliar estudantes na leitura e compreensão de textos acadêmicos. O sistema recebe arquivos PDF ou textos grandes e gera automaticamente resumos, mapas mentais e flashcards, otimizando o tempo de estudo.  
+A plataforma web Java EE, impulsionada pela IA do Google Gemini, oferece aos estudantes ferramentas de extração de texto de PDFs, geração de resumos e flashcards automáticos, respostas inteligentes a perguntas e correção automatizada de redações com sugestões personalizadas.
 
 Estrutura do Repositório  
 - `src/` → Código-fonte do projeto  
@@ -7,16 +7,19 @@ Estrutura do Repositório
 - `.gitignore` → Arquivos que não devem ser versionados  
 
 Tecnologias  
-- Java(linguagem principal)  
-- Spring Boot(se aplicável)  
-- APIs de IA (OpenAI, Google Gemini, ou similar)  
-- Manipulação de PDFs (Apache PDFBox, PDF.js)  
+- Java EE (Servlets, JSP)
+- Apache NetBeans (IDE de desenvolvimento)
+- Tomcat (Servidor de aplicação)
+- Google Gemini API (para gerar resumos, flashcards, respostas e correções)
+- Apache PDFBox (para leitura de PDFs)
+- HTML/CSS (estrutura e estilo das páginas)
 
 Links Importantes  
 - [Documentação no Google Drive](https://docs.google.com/document/d/1qfVvh0RTGFYgaV2e6s6SmhDBZz5oyZyAKm7IGAJzICc/edit?usp=sharing)  
 - [Projeto no GitHub](https://github.com/Millasanches55/ProjetoPoo.git)
 
 Status  
-Projeto em fase inicial. A estrutura e funcionalidades serão adicionadas ao longo do desenvolvimento.
+✔ Projeto funcional com todas as funcionalidades principais implementadas.
+✔ Melhorias visuais estão em andamento para tornar a experiência mais agradável e intuitiva.
 
 
