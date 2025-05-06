@@ -18,6 +18,7 @@ public class PdfExtractor {
           try (PDDocument document = PDDocument.load(pdfFile)) {
          PDFTextStripper stripper = new PDFTextStripper();
             return stripper.getText(document);
+          }
+          
      }
-}
 }
