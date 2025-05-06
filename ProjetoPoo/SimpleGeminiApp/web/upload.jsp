@@ -9,9 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Upload de PDF</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h2>Enviar PDF para Extração de Texto</h2>
     </body>
 </html>
