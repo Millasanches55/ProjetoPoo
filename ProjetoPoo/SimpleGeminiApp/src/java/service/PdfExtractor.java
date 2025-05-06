@@ -16,6 +16,8 @@ import org.apache.pdfbox.text.PDFTextStripper;
 public class PdfExtractor {
      public static String extrairTexto(File pdfFile) throws IOException {
           try (PDDocument document = PDDocument.load(pdfFile)) {
-         
+         PDFTextStripper stripper = new PDFTextStripper();
+            return stripper.getText(document);
      }
+}
 }
