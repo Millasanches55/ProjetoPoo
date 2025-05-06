@@ -41,6 +41,8 @@ public class ResumoService {
         byte[] input = requestBody.toString().getBytes(StandardCharsets.UTF_8);
         os.write(input, 0, input.length);
     }
+    try (BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
+        JsonObject responseJson = JsonParser.parseReader(br).getAsJsonObject();
 
     }
     
