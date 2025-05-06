@@ -31,7 +31,7 @@ public class ResumoService {
     JsonObject part = new JsonObject();
     part.addProperty("text", prompt);
     JsonObject content = new JsonObject();
-        
+    JsonArray partsArray = new JsonArray();
     }
 
     }
