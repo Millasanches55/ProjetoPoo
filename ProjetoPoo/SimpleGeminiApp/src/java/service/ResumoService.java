@@ -27,8 +27,10 @@ public class ResumoService {
     conn.setRequestProperty("Content-Type", "application/json");
     
     JsonObject requestBody = new JsonObject();
-     JsonArray contents = new JsonArray();
-        
+    JsonArray contents = new JsonArray();
+    JsonObject part = new JsonObject();
+    part.addProperty("text", prompt);
+    JsonObject content = new JsonObject();
         
     }
 
