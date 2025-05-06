@@ -14,5 +14,7 @@
         <h2>Flashcards Gerados com IA</h2>
         <pre>${flashcards}</pre>
         <a href="index.jsp">Voltar ao menu</a>
+        <h2>aiaiaia</h2>
+       
     </body>
 </html>
