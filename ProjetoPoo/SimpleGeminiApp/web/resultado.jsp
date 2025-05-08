@@ -18,7 +18,7 @@
     <h2>Resumo Gerado:</h2>
     <pre>${resumo}</pre>
     
-    <h2>Flashcards Gerados</h2>
+    <h2>Flashcards Gerados:</h2>
 <pre>${flashcards}</pre>
 </body>
 </html>
