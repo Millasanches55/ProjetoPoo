@@ -2,27 +2,43 @@
 <html>
 <head>
     <title>Gemini IA Pergunta</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h3>Escolha uma opção:</h3>
-    <ul>
-        <li><a href="upload.jsp">Enviar PDF para resumo e criação de flashcards</a></li>
-        <!-- Você pode adicionar mais links aqui no futuro -->
-    </ul>
     
-    <h2>Faça uma pergunta para a IA:</h2>
-    <form action="GeminiServlet" method="post">
-        <input type="text" name="pergunta" placeholder="Faça sua pergunta" required />
-        <button type="submit">Perguntar</button>
-    </form>
+    <header>
+        <h1>Resumos, Respostas e Correções com o Gemini</h1>
+    </header>
     
     <hr>
     
-    <h2>Enviar Redação para Correção</h2>
-    <form action="CorrecaoServlet" method="post">
-        <textarea name="textoRedacao" rows="10" cols="50" placeholder="Cole sua redação aqui..."></textarea><br><br>
-        <input type="submit" value="Corrigir Redação">
-    </form>
-    
+    <section id='conteudo-index'>
+        <h2>Olá, bem-vindo!</h2>
+        
+        <div id='pergunta-redacao-index'>
+            <div>
+                <h3>Faça uma pergunta para a IA:</h3>
+                <form action="GeminiServlet" method="post">
+                    <textarea name="pergunta" rows="10" cols="50" placeholder="Faça sua pergunta..." required></textarea><br><br>
+                    <button type="submit">Perguntar</button>
+                </form>
+            </div>
+            
+            <hr>
+            
+            <div>
+                <h3>Envie uma Redação para Correção:</h3>
+                <form action="CorrecaoServlet" method="post">
+                    <textarea name="textoRedacao" rows="10" cols="50" placeholder="Cole sua redação aqui..."></textarea><br><br>
+                    <input type="submit" value="Corrigir Redação">
+                </form>
+            </div>
+        </div>
+        <h3>Ou escolha uma opção:</h3>
+        <div id='opcoes-index'>
+            <a href="upload.jsp">Enviar PDF para resumo e criação de flashcards</a>
+            <!-- Você pode adicionar mais links aqui no futuro -->
+        </div>
+    </section>
 </body>
 </html>

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+    --cinza-escuro: #30333b;
+    --cinza: #565d67;
+    --azul: #5090ea;
+    --amarelo: #F5BC4C;
+    background-color: var(--cinza-escuro);
+    color: white;
+    font-family: "Inter", sans-serif;
+    
+}
+
+header {
+    text-align: center;
+    font-weight: 600;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+#conteudo-index {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pergunta-redacao-index {
+    display: flex;
+}
+
+#opcoes-index {
+    text-align: center;
+}
+
+#opcoes-index a {
+    text-decoration: none;
+    color: var(--amarelo);
+    background-color: var(--cinza);
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.2s all;
+}
+
+#opcoes-index a:hover {
+    background-color: black;
+    color: var(--azul);
+    transition: 0.2s all;
+}
