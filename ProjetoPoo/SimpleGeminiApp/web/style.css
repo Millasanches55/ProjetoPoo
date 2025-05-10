@@ -7,6 +7,7 @@
 }
 
 :root {
+    --preto: #18191E;
     --cinza-escuro: #30333b;
     --cinza: #565d67;
     --azul: #5090ea;
@@ -26,7 +27,13 @@ h2, h3 {
     text-align: center;
 }
 
-#conteudo-index {
+textarea {
+    background-color: var(--preto);
+    border-color: var(--cinza);
+    color: white;
+}
+
+section {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -40,17 +47,33 @@ h2, h3 {
     text-align: center;
 }
 
-#opcoes-index a {
+.botao {
     text-decoration: none;
     color: var(--amarelo);
     background-color: var(--cinza);
     padding: 15px;
     border-radius: 15px;
     transition: 0.2s all;
+    font-size: 15px;
+    border-style: none;
+    cursor: pointer;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-#opcoes-index a:hover {
-    background-color: black;
+.botao:hover {
+    background-color: var(--preto);
     color: var(--azul);
     transition: 0.2s all;
+}
+
+#section-upload form {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
 }
