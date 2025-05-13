@@ -9,7 +9,7 @@
         list-style: none;
         display: flex;
         align-items: center;
-        justify-content: flex-start; /* Alinha os itens ‡ esquerda */
+        justify-content: flex-start; /* Alinha os itens √† esquerda */
         border-bottom: 1px solid #5f6368; /* Linha sutil abaixo do menu */
     }
 
@@ -33,7 +33,7 @@
     }
 
     .gemini-menu .logo img {
-        height: 30px; /* Ajuste a altura do logo conforme necess·rio */
+        height: 30px; /* Ajuste a altura do logo conforme necess√°rio */
         vertical-align: middle;
     }
 
@@ -50,7 +50,6 @@
             <img src="seu-logo.png" alt="Logo">
         </a>
     </li>
-    <li class="active"><a href="index.jsp">InÌcio</a></li>
-    <li><a href="flashcards.jsp">Flashcards</a></li>
+    <li class="active"><a href="index.jsp">In√≠cio</a></li>
     <li><a href="upload.jsp">Uploads</a></li>
 </ul>
