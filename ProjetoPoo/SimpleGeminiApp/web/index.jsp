@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="WEB-INF/jspf/menu.jspf" %>
 <html>
 <head>
     <title>Gemini IA Pergunta</title>
