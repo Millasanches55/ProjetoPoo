@@ -19,7 +19,7 @@ import jakarta.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "GeminiResposta", urlPatterns = {"/GeminiResposta.html"})
 public class GeminiResposta extends HttpServlet {
-
+private static final String API_KEY = "AIzaSyA-xNbUAj18cLFGuowbMvPpAy88IXeE_os";
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
