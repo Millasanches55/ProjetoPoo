@@ -8,7 +8,7 @@ import java.net.*;
 import java.nio.charset.StandardCharsets;
 
 public class GeminiServlet extends HttpServlet {
-    /*APIKEY*/
+    private static final String API_KEY = "AIzaSyA-xNbUAj18cLFGuowbMvPpAy88IXeE_os"; 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String pergunta = request.getParameter("pergunta");
