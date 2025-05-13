@@ -37,7 +37,7 @@
                 </form>
             </div>
         </div>
-        <h3>Ou escolha uma opção:</h3>
+        <h3>Envie um PDF</h3>
         <div id='opcoes-index'>
             <a class="botao" style="margin: auto;" href="upload.jsp">Enviar PDF para resumo e criação de flashcards</a>
             <!-- Você pode adicionar mais links aqui no futuro -->
