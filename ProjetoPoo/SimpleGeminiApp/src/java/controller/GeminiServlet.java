@@ -28,7 +28,7 @@ public class GeminiServlet extends HttpServlet {
 
      
         request.setAttribute("resposta", resposta);
-        request.getRequestDispatcher("index.jsp").forward(request, response);
+        request.getRequestDispatcher("respostaGemini.jsp").forward(request, response);
     }
 
     private String chamarGeminiCorreção(String textoRedacao) throws IOException {

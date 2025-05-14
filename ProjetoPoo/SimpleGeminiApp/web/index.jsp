@@ -22,8 +22,6 @@
                     <textarea name="pergunta" rows="10" cols="50" placeholder="Faça sua pergunta..." required></textarea><br><br>
                     <input type="submit" value="Perguntar" class="botao">
                 </form>
-                <hr>
-    <p><b>Resposta:</b> ${resposta}</p>
             </div>
             
             <hr>
