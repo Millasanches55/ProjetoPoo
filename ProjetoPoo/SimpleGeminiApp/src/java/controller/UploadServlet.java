@@ -7,9 +7,9 @@ package controller;
 import service.PdfExtractor;
 import service.ResumoService;
 import service.FlashcardService;
-import jakarta.servlet.*;
-import jakarta.servlet.annotation.MultipartConfig;
-import jakarta.servlet.http.*;
+import javax.servlet.*;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.http.*;
 
 import java.io.*;
 
@@ -21,8 +21,13 @@ public class UploadServlet extends HttpServlet {
         File tempFile = File.createTempFile("upload", ".pdf");
 
         try (InputStream input = filePart.getInputStream(); FileOutputStream output = new FileOutputStream(tempFile)) {
-            input.transferTo(output);
-        }
+    byte[] buffer = new byte[1024];
+    int bytesRead;
+    while ((bytesRead = input.read(buffer)) != -1) {
+        output.write(buffer, 0, bytesRead);
+    }
+}
+
 
        
         String textoExtraido = PdfExtractor.extrairTexto(tempFile);

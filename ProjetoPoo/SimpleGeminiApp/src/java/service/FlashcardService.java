@@ -23,15 +23,16 @@ public class FlashcardService {
     
     public static String gerarFlashcards(String texto) throws IOException {
     String prompt = "Gere flashcards de estudo (pergunta e resposta) a partir do seguinte conteúdo:\n" + texto;
-    String jsonInput = """
-        {
-            "contents": [{
-                "parts": [{
-                    "text": "%s"
-                }]
-            }]
-        }
-        """.formatted(prompt);
+    String jsonInput = String.format(
+    "{\n" +
+    "  \"contents\": [{\n" +
+    "    \"parts\": [{\n" +
+    "      \"text\": \"%s\"\n" +
+    "    }]\n" +
+    "  }]\n" +
+    "}", prompt
+);
+
     HttpURLConnection conn = (HttpURLConnection) new URL(API_URL).openConnection();
     conn.setRequestMethod("POST");
 conn.setRequestProperty("Content-Type", "application/json");
