@@ -21,3 +21,17 @@
 <pre>${flashcards}</pre>
 </body>
 </html>
+<hr>
+<h2>Faça uma pergunta sobre o conteúdo do PDF:</h2>
+<form action="PerguntaPdfServlet" method="post">
+    <input type="hidden" name="texto" value="${texto}">
+    <input type="text" name="pergunta" placeholder="Digite sua pergunta..." required style="width: 60%;">
+    <button type="submit" class="botao">Perguntar</button>
+</form>
+
+<c:if test="${not empty respostaPergunta}">
+    <hr>
+    <h2>Resposta da IA:</h2>
+    <pre>${respostaPergunta}</pre>
+</c:if>
+
