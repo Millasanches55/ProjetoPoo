@@ -9,15 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="style.css"/>
-        <title>Resultado da Correção</title>
+        <link rel="stylesheet" href="style.css?v=2"/>
+        <title>JSP Page</title>
     </head>
     <body>
         <section>
-            <h1>Correção da sua Redação</h1>
-            <pre style="white-space: pre-wrap; background-color: #f4f4f4; padding: 1em; border-radius: 8px;">${correcao}</pre>
-            <br>
-            <a href="index.jsp" style="display: inline-block; margin-top: 20px; text-decoration: none; background-color: #007BFF; color: white; padding: 10px 15px; border-radius: 5px;">Voltar e enviar outra redação</a>
+            <h1>Resposta</h1>
+            <p>${resposta}</p>
         </section>
     </body>
 </html>

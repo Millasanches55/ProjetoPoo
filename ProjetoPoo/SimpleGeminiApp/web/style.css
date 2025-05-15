@@ -12,6 +12,7 @@
     --cinza: #565d67;
     --azul: #5090ea;
     --amarelo: #F5BC4C;
+    --laranja: #FFA500;
     background-color: var(--cinza-escuro);
     color: white;
     font-family: "Inter", sans-serif;
@@ -49,7 +50,7 @@ section {
 
 .botao {
     text-decoration: none;
-    color: var(--amarelo);
+    color: var(--laranja);
     background-color: var(--cinza);
     padding: 15px;
     border-radius: 15px;

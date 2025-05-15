@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Gemini IA Pergunta</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css?v=2"/>
 </head>
 <body>
     
