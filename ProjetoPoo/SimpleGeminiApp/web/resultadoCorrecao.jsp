@@ -16,8 +16,9 @@
             <h1>Correção da sua Redação</h1>
             <pre style="white-space: pre-wrap; background-color: #f4f4f4; padding: 1em; border-radius: 8px;">${correcao}</pre>
             <br>
-            <a href="index.jsp" style="display: inline-block; margin-top: 20px; text-decoration: none; background-color: #007BFF; color: white; padding: 10px 15px; border-radius: 5px;">Voltar e enviar outra redação</a>
+            <a href="index.jsp" class="botao">Voltar e enviar outra redação</a>
         </section>
     </body>
 </html>
+
 
