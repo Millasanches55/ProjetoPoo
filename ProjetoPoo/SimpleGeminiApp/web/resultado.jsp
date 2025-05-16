@@ -23,15 +23,21 @@
 </html>
 <hr>
 <h2>Faça uma pergunta sobre o conteúdo do PDF:</h2>
-<form action="PerguntaPdfServlet" method="post">
-    <input type="hidden" name="texto" value="${texto}">
-    <input type="text" name="pergunta" placeholder="Digite sua pergunta..." required style="width: 60%;">
-    <button type="submit" class="botao">Perguntar</button>
+<form action="GeminiServlet" method="post">
+    <input type="hidden" name="textoPdf" value="${texto}">
+    <input type="text" name="perguntaSobrePdf" placeholder="Digite sua pergunta..." style="width: 60%;" required>
+    <button type="submit">Perguntar</button>
 </form>
 
-<c:if test="${not empty respostaPergunta}">
+<% if (request.getAttribute("resposta") != null) { %>
     <hr>
     <h2>Resposta da IA:</h2>
-    <pre>${respostaPergunta}</pre>
-</c:if>
+    <pre><%= request.getAttribute("resposta") %></pre>
+<% } %>
+
+
+
+
+
+
 
