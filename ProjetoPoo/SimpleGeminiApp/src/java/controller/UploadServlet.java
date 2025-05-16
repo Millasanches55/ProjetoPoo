@@ -42,6 +42,7 @@ public class UploadServlet extends HttpServlet {
         request.setAttribute("texto", textoExtraido);
         request.setAttribute("resumo", resumoGerado);
         request.setAttribute("flashcards", flashcardsGerados);
+        
 
       
         request.getRequestDispatcher("resultado.jsp").forward(request, response);

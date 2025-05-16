@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-	 version="3.1">
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <display-name>SimpleGeminiApp</display-name>
     <servlet>
         <servlet-name>GeminiServlet</servlet-name>
@@ -24,7 +20,7 @@
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
- <servlet>
+    <servlet>
         <servlet-name>CorrecaoServlet</servlet-name>
         <servlet-class>controller.CorrecaoServlet</servlet-class>
     </servlet>
@@ -32,13 +28,4 @@
         <servlet-name>CorrecaoServlet</servlet-name>
         <url-pattern>/CorrecaoServlet</url-pattern>
     </servlet-mapping>
-    <servlet>
-        <servlet-name>GeminiResposta</servlet-name>
-        <servlet-class>controller.GeminiResposta</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>GeminiResposta</servlet-name>
-        <url-pattern>/GeminiResposta</url-pattern>
-    </servlet-mapping>
-    
 </web-app>

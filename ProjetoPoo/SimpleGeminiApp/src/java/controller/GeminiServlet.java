@@ -35,7 +35,7 @@ if (textoRedacao != null && !textoRedacao.isEmpty()) {
 
      
         request.setAttribute("resposta", resposta);
-        String origem = request.getHeader("referer");
+       String origem = request.getHeader("referer");
 if (origem != null && origem.contains("resultado.jsp")) {
     request.setAttribute("texto", textoPdf); // para manter o conteúdo na tela
     request.getRequestDispatcher("resultado.jsp").forward(request, response);
