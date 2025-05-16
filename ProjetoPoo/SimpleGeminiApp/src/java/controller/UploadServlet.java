@@ -39,9 +39,11 @@ public class UploadServlet extends HttpServlet {
         String flashcardsGerados = FlashcardService.gerarFlashcards(textoExtraido);
 
     
-        request.setAttribute("texto", textoExtraido);
-        request.setAttribute("resumo", resumoGerado);
-        request.setAttribute("flashcards", flashcardsGerados);
+        request.getSession().setAttribute("texto", textoExtraido);
+request.getSession().setAttribute("resumo", resumoGerado);
+request.getSession().setAttribute("flashcards", flashcardsGerados);
+request.getSession().setAttribute("conteudoPDF", textoExtraido);
+
         
 
       request.getSession().setAttribute("conteudoPDF", textoExtraido);

@@ -28,6 +28,6 @@
     </c:if>
 
     <br/>
-    <a href="index.jsp">Voltar ao início</a>
+    <a href="resultado.jsp">Voltar</a>
 </body>
 </html>
