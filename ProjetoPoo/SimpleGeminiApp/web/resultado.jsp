@@ -21,19 +21,11 @@
 <pre>${flashcards}</pre>
 </body>
 </html>
-<hr>
-<h2>Faça uma pergunta sobre o conteúdo do PDF:</h2>
-<form action="GeminiServlet" method="post">
-    <input type="hidden" name="textoPdf" value="${texto}">
-    <input type="text" name="perguntaSobrePdf" placeholder="Digite sua pergunta..." style="width: 60%;" required>
-    <button type="submit">Perguntar</button>
+<form action="pergunta-pdf.jsp" method="post">
+    <input type="hidden" name="conteudoPDF" value="${conteudoPDF}" />
+    <button type="submit">Fazer Pergunta sobre o PDF</button>
 </form>
 
-<% if (request.getAttribute("resposta") != null) { %>
-    <hr>
-    <h2>Resposta da IA:</h2>
-    <pre><%= request.getAttribute("resposta") %></pre>
-<% } %>
 
 
 

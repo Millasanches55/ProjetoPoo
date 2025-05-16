@@ -14,35 +14,21 @@ public class GeminiServlet extends HttpServlet {
         String pergunta = request.getParameter("pergunta");
         String textoRedacao = request.getParameter("textoRedacao");
 
-        String textoPdf = request.getParameter("textoPdf");
-String perguntaSobrePdf = request.getParameter("perguntaSobrePdf");
+        String resposta;
 
-String resposta;
-
-if (textoRedacao != null && !textoRedacao.isEmpty()) {
-    resposta = chamarGeminiCorreção(textoRedacao);
-} else if (pergunta != null && !pergunta.isEmpty()) {
-    resposta = chamarGeminiPergunta(pergunta);
-} else if (textoPdf != null && perguntaSobrePdf != null &&
-           !textoPdf.isEmpty() && !perguntaSobrePdf.isEmpty()) {
-    String prompt = "Com base no seguinte texto extraído de um PDF:\n\n"
-                  + textoPdf + "\n\nResponda à pergunta:\n" + perguntaSobrePdf;
-    resposta = chamarGeminiPergunta(prompt);
-} else {
-    resposta = "Nenhuma entrada fornecida.";
-}
-
+        if (textoRedacao != null && !textoRedacao.isEmpty()) {
+          
+            resposta = chamarGeminiCorreção(textoRedacao);
+        } else if (pergunta != null && !pergunta.isEmpty()) {
+          
+            resposta = chamarGeminiPergunta(pergunta);
+        } else {
+            resposta = "Nenhuma entrada fornecida.";
+        }
 
      
         request.setAttribute("resposta", resposta);
-       String origem = request.getHeader("referer");
-if (origem != null && origem.contains("resultado.jsp")) {
-    request.setAttribute("texto", textoPdf); // para manter o conteúdo na tela
-    request.getRequestDispatcher("resultado.jsp").forward(request, response);
-} else {
-    request.getRequestDispatcher("respostaGemini.jsp").forward(request, response);
-}
-
+        request.getRequestDispatcher("respostaGemini.jsp").forward(request, response);
     }
 
     private String chamarGeminiCorreção(String textoRedacao) throws IOException {

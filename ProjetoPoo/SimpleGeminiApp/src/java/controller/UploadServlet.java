@@ -44,7 +44,9 @@ public class UploadServlet extends HttpServlet {
         request.setAttribute("flashcards", flashcardsGerados);
         
 
-      
+      request.getSession().setAttribute("conteudoPDF", textoExtraido);
+
+
         request.getRequestDispatcher("resultado.jsp").forward(request, response);
     }
 }
