@@ -10,6 +10,7 @@
 <html>
 <head>
     <title>Perguntar sobre PDF</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <h2>Faça uma pergunta sobre o conteúdo do PDF</h2>

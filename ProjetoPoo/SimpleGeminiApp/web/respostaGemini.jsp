@@ -15,8 +15,8 @@
     <body>
         <section>
             <h1>Resposta</h1>
-            <p>${resposta}</p>
-            <a href="index.jsp">Voltar e enviar outra pergunta</a>
+            <pre>${resposta}</pre>
+            <a href="index.jsp" class="botao">Voltar e enviar outra pergunta</a>
         </section>
     </body>
 </html>

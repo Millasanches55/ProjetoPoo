@@ -8,13 +8,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="style.css?v=2"/>
+        <link rel="stylesheet" href="style.css"/>
         <title>Resultado da Correção</title>
     </head>
     <body>
         <section>
             <h1>Correção da sua Redação</h1>
-            <pre style="white-space: pre-wrap; background-color: #f4f4f4; padding: 1em; border-radius: 8px;">${correcao}</pre>
+            <pre>${correcao}</pre>
             <br>
             <a href="index.jsp" class="botao">Voltar e enviar outra redação</a>
         </section>

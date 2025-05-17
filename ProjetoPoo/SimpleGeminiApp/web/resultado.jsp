@@ -9,6 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="style.css" rel="stylesheet"/>
     <title>Texto Extraído</title>
 </head>
 <body>

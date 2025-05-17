@@ -8,6 +8,7 @@
 <html>
     <head>
         <title>Flashcards Gerados</title>
+        <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
         <h2>Flashcards Gerados com IA</h2>

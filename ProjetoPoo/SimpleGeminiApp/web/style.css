@@ -78,3 +78,11 @@ section {
     gap: 30px;
     align-items: center;
 }
+pre {
+    color: black;
+    font-family: "Inter";
+    white-space: pre-wrap;
+    background-color: #f4f4f4;
+    padding: 1em;
+    border-radius: 8px;
+}
