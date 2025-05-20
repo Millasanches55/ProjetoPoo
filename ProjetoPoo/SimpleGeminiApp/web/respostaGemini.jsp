@@ -13,12 +13,15 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
         <%@include file='WEB-INF/jspf/header.jspf'%>
         
         <section>
             <h1>Resposta</h1>
             <pre>${resposta}</pre>
-            <a href="index.jsp" class="botao">Voltar e enviar outra pergunta</a>
+            <a href="index.jsp" class="botao">
+                <box-icon color="white" name='arrow-back'></box-icon> Voltar
+            </a>
         </section>
     </body>
 </html>

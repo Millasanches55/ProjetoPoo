@@ -13,6 +13,7 @@
     <title>Texto Extraído</title>
 </head>
 <body>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <%@include file='WEB-INF/jspf/header.jspf'%>
     
     <h2>Conteúdo do PDF:</h2>
@@ -28,7 +29,9 @@
     <form action="pergunta-pdf.jsp" method="post">
         <button type="submit">Fazer Pergunta sobre o PDF</button>
     </form>
-    <a href="upload.jsp" class="botao">Voltar e enviar outro PDF</a>
+    <a href="index.jsp" class="botao">
+        <box-icon color="white" name='arrow-back'></box-icon> Voltar
+    </a>
 </body>
 </html>
 

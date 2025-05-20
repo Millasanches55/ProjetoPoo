@@ -12,11 +12,8 @@
         <title>Upload de PDF</title>
     </head>
     <body>
-        <header>
-            <h1>Resumos, Respostas e Correções com o Gemini</h1>
-        </header>
-
-        <hr>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <%@include file='WEB-INF/jspf/header.jspf'%>
         
         <section id="section-upload">
             <br>

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <%@include file='WEB-INF/jspf/header.jspf'%>
     
     <h2>Faça uma pergunta sobre o conteúdo do PDF</h2>
@@ -31,6 +32,8 @@
     </c:if>
 
     <br/>
-    <a href="resultado.jsp">Voltar</a>
+    <a href="resultado.jsp" class="botao">
+        <box-icon color="white" name='arrow-back'></box-icon> Voltar
+    </a>
 </body>
 </html>

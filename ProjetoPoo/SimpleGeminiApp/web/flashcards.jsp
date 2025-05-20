@@ -11,9 +11,14 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <h2>Flashcards Gerados com IA</h2>
-        <pre>${flashcards}</pre>
-        <a href="index.jsp">Voltar ao menu</a>
-       
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <%@include file='WEB-INF/jspf/header.jspf'%>
+        <section>
+            <h2>Flashcards Gerados com IA</h2>
+            <pre>${flashcards}</pre>
+            <a href="index.jsp" class="botao">
+            <box-icon color="white" name='arrow-back'></box-icon> Voltar
+            </a>
+        </section>
     </body>
 </html>
