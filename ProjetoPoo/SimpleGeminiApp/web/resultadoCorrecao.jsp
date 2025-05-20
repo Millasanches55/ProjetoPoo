@@ -12,6 +12,8 @@
         <title>Resultado da Correção</title>
     </head>
     <body>
+        <%@include file='WEB-INF/jspf/header.jspf'%>
+        
         <section>
             <h1>Correção da sua Redação</h1>
             <pre>${correcao}</pre>

@@ -6,12 +6,8 @@
 </head>
 <body>
     
-    <header>
-        <h1>Resumos, Respostas e Correções com o Gemini</h1>
-    </header>
-    
-    <hr>
-    
+    <%@include file='WEB-INF/jspf/header.jspf'%>
+     
     <section>
         <h2>Olá, bem-vindo! &#128075</h2>
         
