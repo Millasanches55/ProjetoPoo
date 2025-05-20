@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <%@include file='WEB-INF/jspf/header.jspf'%>
+    
     <h2>Faça uma pergunta sobre o conteúdo do PDF</h2>
 
     <form action="PerguntaPDFServlet" method="post">

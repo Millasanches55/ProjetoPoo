@@ -13,6 +13,8 @@
     <title>Texto Extraído</title>
 </head>
 <body>
+    <%@include file='WEB-INF/jspf/header.jspf'%>
+    
     <h2>Conteúdo do PDF:</h2>
     <pre>${sessionScope.texto}</pre>
     <hr>

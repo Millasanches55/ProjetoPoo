@@ -13,6 +13,8 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <%@include file='WEB-INF/jspf/header.jspf'%>
+        
         <section>
             <h1>Resposta</h1>
             <pre>${resposta}</pre>
