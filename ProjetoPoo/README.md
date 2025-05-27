@@ -11,7 +11,7 @@ Estrutura do Repositório
 Tecnologias  
 - Java EE (Servlets, JSP)
 - Apache NetBeans (IDE de desenvolvimento)
-- Tomcat (Servidor de aplicação)
+- GlassFish (Servidor de aplicação)
 - Google Gemini API (para gerar resumos, flashcards, respostas e correções)
 - Apache PDFBox (para leitura de PDFs)
 - HTML/CSS (estrutura e estilo das páginas)
