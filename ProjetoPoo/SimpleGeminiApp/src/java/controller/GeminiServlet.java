@@ -1,5 +1,5 @@
 package controller;
-
+// Importações para trabalhar com JSON, Servlets, conexões HTTP e codificação
 import com.google.gson.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -11,6 +11,7 @@ public class GeminiServlet extends HttpServlet {
     private static final String API_KEY = "AIzaSyA-xNbUAj18cLFGuowbMvPpAy88IXeE_os"; 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Recupera os parâmetros enviados pelo formulário
         String pergunta = request.getParameter("pergunta");
         String textoRedacao = request.getParameter("textoRedacao");
 
@@ -51,11 +52,13 @@ public class GeminiServlet extends HttpServlet {
         contents.add(content);
         requestBody.add("contents", contents);
 
+        // Envia a requisição
         try (OutputStream os = conn.getOutputStream()) {
             byte[] input = requestBody.toString().getBytes(StandardCharsets.UTF_8);
             os.write(input, 0, input.length);
         }
 
+        // Lê a resposta da API e extrai o texto da correção
         try (BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
             JsonObject responseJson = JsonParser.parseReader(br).getAsJsonObject();
             String resposta = responseJson
@@ -69,6 +72,7 @@ public class GeminiServlet extends HttpServlet {
         }
     }
 
+    // Método para enviar uma pergunta genérica para a IA e obter uma resposta
     private String chamarGeminiPergunta(String pergunta) throws IOException {
         URL url = new URL("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + API_KEY);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -89,11 +93,13 @@ public class GeminiServlet extends HttpServlet {
         contents.add(content);
         requestBody.add("contents", contents);
 
+        // Envia a requisição
         try (OutputStream os = conn.getOutputStream()) {
             byte[] input = requestBody.toString().getBytes(StandardCharsets.UTF_8);
             os.write(input, 0, input.length);
         }
 
+        // Lê a resposta da API e extrai o texto de retorno
         try (BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
             JsonObject responseJson = JsonParser.parseReader(br).getAsJsonObject();
             String resposta = responseJson

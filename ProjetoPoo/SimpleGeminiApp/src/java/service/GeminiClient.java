@@ -36,6 +36,8 @@ public class GeminiClient {
             os.write(input, 0, input.length);
         }
 
+        
+        // Lê a resposta da API e extrai o texto gerado pela IA
         try (BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
             JsonObject responseJson = JsonParser.parseReader(br).getAsJsonObject();
             return responseJson

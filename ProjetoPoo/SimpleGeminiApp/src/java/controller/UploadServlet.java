@@ -17,9 +17,13 @@ import java.io.*;
 public class UploadServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Obtém o arquivo PDF enviado pelo formulário
         Part filePart = request.getPart("arquivo");
+        // Cria um arquivo temporário para armazenar o upload
         File tempFile = File.createTempFile("upload", ".pdf");
 
+        
+        // Copia o conteúdo do arquivo enviado para o arquivo temporário
         try (InputStream input = filePart.getInputStream(); FileOutputStream output = new FileOutputStream(tempFile)) {
     byte[] buffer = new byte[1024];
     int bytesRead;
@@ -29,16 +33,16 @@ public class UploadServlet extends HttpServlet {
 }
 
 
-       
+       // Extrai o texto do PDF utilizando a classe de serviço PdfExtractor
         String textoExtraido = PdfExtractor.extrairTexto(tempFile);
 
-   
+      // Gera um resumo do texto com IA
         String resumoGerado = ResumoService.gerarResumo(textoExtraido);
 
-       
+       // Gera flashcards a partir do texto
         String flashcardsGerados = FlashcardService.gerarFlashcards(textoExtraido);
 
-    
+       // Armazena os resultados
         request.getSession().setAttribute("texto", textoExtraido);
 request.getSession().setAttribute("resumo", resumoGerado);
 request.getSession().setAttribute("flashcards", flashcardsGerados);
@@ -48,7 +52,7 @@ request.getSession().setAttribute("conteudoPDF", textoExtraido);
 
       request.getSession().setAttribute("conteudoPDF", textoExtraido);
 
-
+      // Encaminha para a página de resultado
         request.getRequestDispatcher("resultado.jsp").forward(request, response);
     }
 }
